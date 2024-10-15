@@ -86,6 +86,12 @@ html {
         font-style: normal;
     }
 
+    h5 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
     a {
         font-size: 13px;
         font-family: "Montserrat", sans-serif;
@@ -100,4 +106,32 @@ html {
         transition: 0.5s;
         background-color: blue;
     }
+}
+
+.footer h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;   
+}
+
+.footer li a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;   
+}
+
+.meu-footer h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;   
+}
+
+.meu-footer li a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;   
 }

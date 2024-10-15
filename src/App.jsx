@@ -4,6 +4,7 @@ import Image from './assets/Eating healthy food-pana.svg';
 import './header.css';
 import { HeaderPC } from './components/headerPC/headerpc.jsx';
 import Card from './components/card/card.jsx'
+import CardLoc from './components/card/cardLoc.jsx';
 
 function App() {
   return (
@@ -55,7 +56,7 @@ function App() {
 
     </section>
 
-    {/* SAIBA MAIS */}
+    {/* LEARN MORE */}
     <section id='sobre' className='flex flex-col items-center justify-center mt-28 lg:mt-32 text-xl lg:text-3xl meu-text'>
       <div>
         <h1 className='text-blue-600'>SAIBA MAIS</h1>
@@ -73,17 +74,89 @@ function App() {
         <h1 className='text-3xl text-blue-600'>ONDE ESTAMOS?</h1>
       </div>
 
-      <div className='flex items-center justify-center mt-10 flex-col w-full meu-text-pc'>
+      <div className='flex items-center mt-10 flex-col w-full meu-text-pc'>
         <iframe className='lg: w-2/3' src="https://www.google.com.br/maps/embed?pb=!1m18!1m12!1m3!1d14640.586959135325!2d-46.4302446!3d-23.487226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63b8abd4c3c7%3A0x7b3b4099ed7e7a3d!2sR.%20Salvador%20Fernandes%20Cardia%2C%20Jardim%20Helena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008081-170!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" frameborder="0"></iframe>
-        <h2 className='lg: text-2xl flex justify-center mt-10 w-2/3 md: mt-4'>Onde me encontrar?</h2><br></br>
-        <h3 className='hidden lg: flex justify-center mt-5 w-2/3 md:block'>Estou localizado(a) na Rua Salvador Fernandes Cardia, 318, no CEP 08081-170, em São Paulo.<br></br> Ao visitar meu espaço, você não encontrará apenas um endereço, mas um ambiente acolhedor onde sua jornada rumo a uma vida mais saudável começa.</h3>
-        <h3 className='flex justify-center w-2/3 md: -mt-1 md:hidden'>Estou localizado(a) na Rua Salvador Fernandes Cardia, 318, no CEP 08081-170, em São Paulo.</h3>
-       <h3 className='hidden flex justify-center mt-5 w-2/3 md:block'>Aqui, dedicamo-nos a oferecer tratamentos nutricionais personalizados, além de cultivar a paixão pelo esporte e pelo bem-estar. Este é um lugar onde nutrição e atividade física se unem de forma harmoniosa, impulsionando você em direção aos seus objetivos.</h3>
-       <br></br> 
-        
-       <h4 className='lg: flex  mt-7 w-2/3 md: -mt-3'>Estou ansioso(a) para a sua visita!</h4>
-        
+        <div className='flex w-2/3 mt-5'>
+          <CardLoc/>
+        </div>        
       </div>
+    </section>
+
+    {/* FOOTER */}
+    <section id='contato' className='flex flex-col justify-center mt-10 hidden md:block'>
+    <footer className="bg-blue-600 text-white py-8 flex justify-center">
+      <div className="flex flex-row gap-40 justify-center grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Coluna de Serviços */}
+        <div className='footer'>
+          <h3 className="font-bold mb-4">Serviços</h3>
+          <ul>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Nutrição Infantil</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Nutrição Esportiva</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Planos Alimentares</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Acompanhamento Personalizado</a></li>
+          </ul>
+        </div>
+
+        {/* Coluna de Contato */}
+        <div className='footer'>
+          <h3 className="font-bold mb-4">Contato</h3>
+          <ul>
+            <li className="mb-2"><a href="mailto:exemplo@dominio.com" className="hover:text-gray-400">Email: exemplo@dominio.com</a></li>
+            <li className="mb-2"><a href="tel:+5511999999999" className="hover:text-gray-400">Telefone: (11) 99999-9999</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Endereço: Rua Exemplo, 123</a></li>
+          </ul>
+        </div>
+
+        {/* Coluna de Redes Sociais */}
+        <div className='footer'>
+          <h3 className="font-bold mb-4">Redes Sociais</h3>
+          <ul className="flex flex-col gap-2">
+            <li><a href="#" className="hover:text-gray-400">Facebook</a></li>
+            <li><a href="#" className="hover:text-gray-400">Instagram</a></li>
+            <li><a href="#" className="hover:text-gray-400">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>   
+    </section>
+
+    {/* FOOTER MOBILE */}
+    <section className='mt-8 md:hidden'>
+    <footer className="bg-blue-600 text-white py-8 px-7">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Coluna de Serviços */}
+        <div className='meu-footer'>
+          <h3 className="font-bold mb-4">Serviços</h3>
+          <ul>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Consulta Nutricional</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Planos Alimentares</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Acompanhamento Personalizado</a></li>
+          </ul>
+        </div>
+
+        {/* Coluna de Contato */}
+        <div className='meu-footer'>
+          <h3 className="font-bold mb-4">Contato</h3>
+          <ul>
+            <li className="mb-2"><a href="mailto:exemplo@dominio.com" className="hover:text-gray-400">Email: exemplo@dominio.com</a></li>
+            <li className="mb-2"><a href="tel:+5511999999999" className="hover:text-gray-400">Telefone: (11) 99999-9999</a></li>
+            <li className="mb-2"><a href="#" className="hover:text-gray-400">Endereço: Rua Exemplo, 123</a></li>
+          </ul>
+        </div>
+
+        {/* Coluna de Redes Sociais */}
+        <div className='meu-footer'>
+          <h3 className="font-bold mb-4">Redes Sociais</h3>
+          <ul className="flex space-x-4">
+            <li><a href="#" className="hover:text-gray-400">Facebook</a></li>
+            <li><a href="#" className="hover:text-gray-400">Instagram</a></li>
+            <li><a href="#" className="hover:text-gray-400">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+
+  
+    </footer>
     </section>
     </>
   );
