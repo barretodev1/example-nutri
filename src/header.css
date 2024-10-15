@@ -1,0 +1,103 @@
+
+html {
+    scroll-behavior: smooth; /* Habilita o scroll suave */
+}
+
+.meu-text {
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+    
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    h3 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    ul {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    li {
+        transition: 0.3s;
+    }
+
+    li:hover {
+        transition: 0.3s;
+        color: blue;
+     }
+}
+
+.meu-button {
+    a {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+
+.meu-text-pc {
+    scroll-behavior: smooth; /* Habilita o scroll suave */
+
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+    
+    h3 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    h4 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    a {
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        transition: 0.5s;
+
+    }
+
+    a:hover {
+        transition: 0.5s;
+        background-color: blue;
+    }
+}
