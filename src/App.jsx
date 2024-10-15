@@ -27,11 +27,11 @@ function App() {
         </div>
         
         <figure className='mt-5 flex items-center justify-center md:hidden'>
-          <img className='h-80' src={Image} alt="Comida saudável" />
+          <img className='h-96' src={Image} alt="Comida saudável" />
         </figure>
 
         <div className='meu-button flex items-center justify-center mt-6 md:hidden'>
-          <a className='px-6 h-10 flex items-center justify-center rounded-2xl text-white text-xs bg-blue-500' href="https://wa.me/5511933255476?text=Ol%C3%A1!%20Tudo%20bem%3F">ENTRE EM CONTATO</a>
+          <a className='px-6 w-52 h-14 flex items-center justify-center rounded-2xl text-white text-xs bg-blue-500' href="https://wa.me/5511933255476?text=Ol%C3%A1!%20Tudo%20bem%3F">ENTRE EM CONTATO</a>
         </div>
 
 
